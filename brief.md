@@ -36,4 +36,9 @@ Resource: NTIA - The Minimum Elements for a Software Bill of Materials (SBOM) - 
 
 ## Misconception in My Track
 
+A common misconception is that updating the logging library in one application automatically secures every system in an organization. In reality, Log4Shell risk depends on which Log4j versions and affected configurations are present across applications and dependencies. Organizations must identify affected systems, apply the appropriate fixed versions or vendor-recommended mitigations, and verify that the changes have been deployed. The Apache Log4j security page documents the vulnerability and its affected versions, showing why software inventory and systematic remediation are necessary.
+Evidence source: Apache Log4j Security Vulnerabilities, section “CVE-2021-44228”. https://logging.apache.org/log4j/2.x/security.html
+
 ## Open Question
+
+How can organizations reliably identify vulnerable versions of open-source dependencies across applications and transitive dependencies, and verify that security fixes have reached every affected production system?
